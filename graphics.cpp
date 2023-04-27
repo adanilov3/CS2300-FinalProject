@@ -9,7 +9,6 @@ GLdouble width, height;
 int wd, clickX, clickY;
 
 Circle sun;
-
 vector<Circle> snow;
 
 void init() {
@@ -92,7 +91,7 @@ void display() {
     // D3: What does this code do? What will it look like? Where will it be?
     string message = "You clicked the mouse at coordinate (" + to_string(clickX) + ", " + to_string(clickY) + ")";
     glColor3f(1, 1, 1);
-    glRasterPos2i(0, height);
+    glRasterPos2i(0, 50);
     for (char letter : message) {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, letter);
     }
