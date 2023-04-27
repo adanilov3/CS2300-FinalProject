@@ -7,10 +7,9 @@ using namespace std;
 
 GLdouble width, height;
 int wd, clickX, clickY;
-Circle ball;
-Circle bubble;
+
 Circle sun;
-vector<Circle> eye;
+
 vector<Circle> snow;
 
 void init() {
@@ -20,21 +19,10 @@ void init() {
 
     clickX = clickY = 0;
 
-    ball.setCenter(400, 400);
-    ball.setColor(0.7, 0, 0, 1);
-    ball.setRadius(50);
-
-    bubble.setCenter(500, 300);
-    bubble.setColor(0.7, 0.8, 0.8, 1);
-    bubble.setRadius(30);
-
     sun.setCenter(width, 0);
     sun.setColor(1, 1, 0, 1);
     sun.setRadius(100);
 
-    eye.push_back(Circle(1, 1, 1, 1, -20, -20, 20));
-    eye.push_back(Circle(0, 0, 1, 1, -20, -20, 10));
-    eye.push_back(Circle(0, 0, 0, 1, -20, -20, 3));
 
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
@@ -80,13 +68,7 @@ void display() {
     }
 
     // D2: What is being drawn? Where? What color?
-    ball.draw();
 
-    bubble.draw();
-
-    for (Circle &e : eye) {
-        e.draw();
-    }
 
 
     // D3: What does this code do? What will it look like? Where will it be?
@@ -124,13 +106,13 @@ void kbd(unsigned char key, int x, int y) {
         }
         case 'b': {
             // K1: What does this line of code do? When?
-            bubble.setColor(0, 0, 0, 0);
+            //bubble.setColor(0, 0, 0, 0);
             break;
         }
         case 'o': {
             // K2: What happens when the bubble gets big
             // enough to overlap with other shapes?
-            bubble.setRadius(bubble.getRadius() + 5);
+            //bubble.setRadius(bubble.getRadius() + 5);
             break;
         }
     }
@@ -141,7 +123,7 @@ void kbdUp(unsigned char key, int x, int y) {
     // K3: What will happen here? When?
     switch(key) {
         case 'b': {
-            bubble.setColor(0.7, 0.8, 0.8, 1);
+            //bubble.setColor(0.7, 0.8, 0.8, 1);
             break;
         }
     }
@@ -170,15 +152,15 @@ void kbdS(int key, int x, int y) {
 void cursor(int x, int y) {
 
     // M2: What does this line do? What will it look like?
-    eye[1].setColor(0, x/double(width), y/double(height), 1);
+    //eye[1].setColor(0, x/double(width), y/double(height), 1);
 
     // M3: What do these lines do? What will it look like?
-    if (x >= 0 && x <= width && y >= 0 && y <= height) {
-        eye[1].setCenter(eye[0].getCenterX() + ((x - eye[0].getCenterX()) / (double) width * 20),
-                         eye[0].getCenterY() + ((y - eye[0].getCenterY()) / (double) height * 20));
-        eye[2].setCenter(eye[1].getCenterX() + ((x - eye[1].getCenterX()) / (double) width * 14),
-                         eye[1].getCenterY() + ((y - eye[1].getCenterY()) / (double) height * 14));
-    }
+    //if (x >= 0 && x <= width && y >= 0 && y <= height) {
+    //    eye[1].setCenter(eye[0].getCenterX() + ((x - eye[0].getCenterX()) / (double) width * 20),
+    //                     eye[0].getCenterY() + ((y - eye[0].getCenterY()) / (double) height * 20));
+    //    eye[2].setCenter(eye[1].getCenterX() + ((x - eye[1].getCenterX()) / (double) width * 14),
+    //                     eye[1].getCenterY() + ((y - eye[1].getCenterY()) / (double) height * 14));
+    //}
     glutPostRedisplay();
 }
 
@@ -190,11 +172,11 @@ void mouse(int button, int state, int x, int y) {
     clickY = y;
 
     // M1: What does this code do?
-    if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-        for (Circle &e : eye) {
-            e.setCenter(x, y);
-        }
-    }
+    //if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+    //    for (Circle &e : eye) {
+    //        e.setCenter(x, y);
+    //    }
+    //}
     glutPostRedisplay();
 }
 

@@ -1,7 +1,7 @@
 # ninja log v5
-1	300	1682617199531229432	CMakeFiles/graphics.dir/circle.cpp.o	55e0a219fef19096
-0	302	1682617199534571596	CMakeFiles/graphics.dir/Button.cpp.o	62d58d1d4ec6ae5b
-2	372	1682617199604075834	CMakeFiles/graphics.dir/shape.cpp.o	699a37b0cb0c4dea
-1	379	1682617199612213639	CMakeFiles/graphics.dir/rect.cpp.o	1fb6e34a8c41daf6
-1	405	1682617199637694982	CMakeFiles/graphics.dir/graphics.cpp.o	184582da7d7fbd41
-405	496	1682617199730913333	graphics	5918c27dcec379ce
+31	949	7043202208037695	CMakeFiles/graphics.dir/shape.cpp.obj	f71dc8d819d3a1a7
+10	2203	7043202220598705	CMakeFiles/graphics.dir/circle.cpp.obj	3f85575a66f0d55a
+1	2226	7043202220847768	CMakeFiles/graphics.dir/Button.cpp.obj	4cbfc776b581f2ee
+40	2447	7043202223014016	CMakeFiles/graphics.dir/rect.cpp.obj	da1a0a1e85e52a27
+18	2532	7043202223876234	CMakeFiles/graphics.dir/graphics.cpp.obj	62bab6bfdbab275f
+2533	2864	7043202227174250	graphics.exe	b98d67ff6622103e
