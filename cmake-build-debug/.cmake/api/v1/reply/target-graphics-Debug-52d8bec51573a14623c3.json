@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "graphics.exe"
-		},
-		{
-			"path" : "graphics.pdb"
+			"path" : "graphics"
 		}
 	],
 	"backtrace" : 1,
@@ -14,8 +11,6 @@
 		"commands" : 
 		[
 			"add_executable",
-			"link_directories",
-			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -36,19 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 21,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 34,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 20,
+				"line" : 23,
 				"parent" : 0
 			}
 		]
@@ -59,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wno-deprecated -Werror=return-type -g"
+					"fragment" : " -Wno-deprecated -Werror=return-type -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -68,8 +51,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "C:/Program Files/Common Files/freeglut/include"
+					"backtrace" : 2,
+					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/GLUT.framework/Headers"
 				}
 			],
 			"language" : "CXX",
@@ -105,34 +92,42 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "-LC:\\PROGRA~1\\COMMON~1\\freeglut\\lib\\x64",
-				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lopengl32",
+				"fragment" : "-framework",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lglu32",
+				"fragment" : "OpenGL",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lfreeglut",
+				"fragment" : "-framework",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"fragment" : "OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "GLUT",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "Cocoa",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "graphics",
-	"nameOnDisk" : "graphics.exe",
+	"nameOnDisk" : "graphics",
 	"paths" : 
 	{
 		"build" : ".",
