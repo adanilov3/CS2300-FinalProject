@@ -136,7 +136,6 @@ void Rect::changeHeight(double delta) {
     setSize({size.width, size.height + delta});
 }
 
-// TODO: Implement this method
 bool Rect::isOverlapping(const Rect &r) const {
     // There are only two cases when rectangles are *not* overlapping:
     // 1. when one is to the left of the other
@@ -147,7 +146,6 @@ bool Rect::isOverlapping(const Rect &r) const {
     return overlap;
 }
 
-// TODO: Implement this method
 void Rect::draw() const {
     // Don't forget to set the color to the fill field
     glColor3f(fill.red, fill.green, fill.blue);

@@ -17,18 +17,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="ski trail logic">
+    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="message change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-27T17-56-29-0432.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/Button.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/circle.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/rect.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/shape.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/rect.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/rect.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/rect.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,28 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682617162123</updated>
     </task>
-    <task id="LOCAL-00015" summary="drew ski mountain">
-      <created>1682618075249</created>
+    <task id="LOCAL-00015" summary="message change">
+      <created>1682618596809</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1682618075249</updated>
+      <updated>1682618596809</updated>
     </task>
-    <task id="LOCAL-00016" summary="?">
-      <created>1682618610378</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1682618610378</updated>
-    </task>
-    <task id="LOCAL-00017" summary="ski trail logic">
-      <created>1682619851837</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1682619851838</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,9 +240,7 @@
     <MESSAGE value="dimensions are set up" />
     <MESSAGE value="hi" />
     <MESSAGE value="doing stuff" />
-    <MESSAGE value="drew ski mountain" />
-    <MESSAGE value="?" />
-    <MESSAGE value="ski trail logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="ski trail logic" />
+    <MESSAGE value="message change" />
+    <option name="LAST_COMMIT_MESSAGE" value="message change" />
   </component>
 </project>
