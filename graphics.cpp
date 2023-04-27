@@ -1,5 +1,6 @@
 #include "circle.h"
 #include "graphics.h"
+#include "rect.h"
 #include <ctime>
 #include <iostream>
 #include <vector>
@@ -10,6 +11,8 @@ int wd, clickX, clickY;
 
 Circle sun;
 vector<Circle> snow;
+Rect liftie1;
+Rect liftie2;
 
 void init() {
     srand(time(0));
@@ -22,6 +25,12 @@ void init() {
     sun.setColor(1, 1, 0, 1);
     sun.setRadius(100);
 
+    liftie1.setCenter(735, 170);
+    liftie1.setSize(15, 20);
+    liftie1.setColor(0.75, 0.4, 0, 1);
+    liftie2.setCenter(325, 170);
+    liftie2.setSize(15, 20);
+    liftie2.setColor(0.75, 0.4, 0, 1);
 
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
@@ -59,6 +68,7 @@ void display() {
     /*
      * Draw here
      */
+    //draw mountains
     glBegin(GL_TRIANGLE_FAN);
     glVertex2i(0, 625);
     glColor3f(1.0, 1.0, 1.0);
@@ -77,8 +87,32 @@ void display() {
     glColor3f(1.0, 1.0, 1.0);
     glEnd();
 
-    // sun.draw();
+    glBegin(GL_LINES);
+    glColor3f(0,0,0);
+    glVertex2f(735, 170);
+    glVertex2f(800, 625);
+    glEnd();
 
+    glBegin(GL_LINES);
+    glColor3f(0,0,0);
+    glVertex2f(735, 170);
+    glVertex2f(670, 625);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3f(0,0,0);
+    glVertex2f(325, 170);
+    glVertex2f(390, 625);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3f(0,0,0);
+    glVertex2f(325, 170);
+    glVertex2f(260, 625);
+    glEnd();
+
+    liftie1.draw();
+    liftie2.draw();
 
     for (Circle &flake : snow) {
         flake.draw();
