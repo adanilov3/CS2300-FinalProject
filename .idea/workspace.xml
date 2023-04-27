@@ -17,7 +17,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="doing stuff" />
+    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="no more green triangles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +99,7 @@
       <workItem from="1681861639322" duration="81000" />
       <workItem from="1682018963768" duration="11000" />
       <workItem from="1682616716439" duration="135000" />
-      <workItem from="1682616874325" duration="408000" />
+      <workItem from="1682616874325" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1681311971295</created>
@@ -193,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682617162123</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="no more green triangles">
+      <created>1682617448088</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682617448088</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +236,7 @@
     <MESSAGE value="dimensions are set up" />
     <MESSAGE value="hi" />
     <MESSAGE value="doing stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="doing stuff" />
+    <MESSAGE value="no more green triangles" />
+    <option name="LAST_COMMIT_MESSAGE" value="no more green triangles" />
   </component>
 </project>
