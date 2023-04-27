@@ -81,7 +81,7 @@ void display() {
 
 
     // D1: What is being drawn? Where? What color?
-    glColor3f(0, 0.5, 0);
+    /*glColor3f(0, 0.5, 0);
     glBegin(GL_TRIANGLES);
     glVertex2i(0, 0);
     glVertex2i(0, 100);
@@ -89,7 +89,7 @@ void display() {
     glVertex2i(width, height);
     glVertex2i(width, height - 100);
     glVertex2i(width - 100, height);
-    glEnd();
+    glEnd();*/
 
     glDisable(GL_BLEND);
 
