@@ -32,7 +32,7 @@ void init() {
 /* Initialize OpenGL Graphics */
 void initGL() {
     // Set "clearing" or background color
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Black and opaque
+    glClearColor(0.0f, 0.6f, 1.0f, 1.0f); // Black and opaque
 }
 
 /* Handler for window-repaint event. Call back when the window first appears and
@@ -60,7 +60,25 @@ void display() {
     /*
      * Draw here
      */
-    sun.draw();
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2i(0, 625);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i(312.5, 150);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i(625, 625);
+    glColor3f(1.0, 1.0, 1.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2i(450, 625);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i(725, 150);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i(1000, 625);
+    glColor3f(1.0, 1.0, 1.0);
+    glEnd();
+
+    // sun.draw();
 
 
     for (Circle &flake : snow) {

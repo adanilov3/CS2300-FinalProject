@@ -17,12 +17,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="no more green triangles">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="doing stuff">
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphics.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/sasha/Desktop/cs120/FinalProject-adanilov-bmbowman/cmake-build-debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sasha/Desktop/cs120/FinalProject-adanilov-bmbowman/cmake-build-debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sasha\Desktop\cs120\FinalProject-adanilov-bmbowman\cmake-build-debug" />
@@ -99,7 +100,7 @@
       <workItem from="1681861639322" duration="81000" />
       <workItem from="1682018963768" duration="11000" />
       <workItem from="1682616716439" duration="135000" />
-      <workItem from="1682616874325" duration="1133000" />
+      <workItem from="1682616874325" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1681311971295</created>
@@ -199,14 +200,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682617162123</updated>
     </task>
-    <task id="LOCAL-00015" summary="no more green triangles">
-      <created>1682617448088</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1682617448088</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +230,6 @@
     <MESSAGE value="dimensions are set up" />
     <MESSAGE value="hi" />
     <MESSAGE value="doing stuff" />
-    <MESSAGE value="no more green triangles" />
-    <option name="LAST_COMMIT_MESSAGE" value="no more green triangles" />
+    <option name="LAST_COMMIT_MESSAGE" value="doing stuff" />
   </component>
 </project>
