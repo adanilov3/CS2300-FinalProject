@@ -201,6 +201,15 @@ void kbdS(int key, int x, int y) {
 }
 
 void cursor(int x, int y) {
+    if (x < 312.5 && y > 150) {
+        // Go down left of left ski mountain
+    } else if (x > 312.5 && x < 530 && y > 150) {
+        // Go down right side of left ski mountain
+    } else if (x > 530 && x < 725 && y > 150) {
+        // Go down left side of right ski mountain
+    } else if (x > 725 && y > 150) {
+        // Go down right side of right ski mountain
+    }
 
     // M2: What does this line do? What will it look like?
     //eye[1].setColor(0, x/double(width), y/double(height), 1);
