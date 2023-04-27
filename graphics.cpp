@@ -13,6 +13,8 @@ Circle sun;
 vector<Circle> snow;
 Rect liftie1;
 Rect liftie2;
+Rect skiier;
+bool click = false;
 
 void init() {
     srand(time(0));
@@ -31,6 +33,9 @@ void init() {
     liftie2.setCenter(325, 170);
     liftie2.setSize(15, 20);
     liftie2.setColor(0.75, 0.4, 0, 1);
+
+    skiier.setColor(1, 0, 0, 1);
+    skiier.setSize(10, 10);
 
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
@@ -114,11 +119,13 @@ void display() {
     liftie1.draw();
     liftie2.draw();
 
+    if (click) {
+        skiier.draw();
+    }
+
     for (Circle &flake : snow) {
         flake.draw();
     }
-
-    // D2: What is being drawn? Where? What color?
 
 
 
@@ -203,12 +210,16 @@ void kbdS(int key, int x, int y) {
 void cursor(int x, int y) {
     if (x < 312.5 && y > 150) {
         // Go down left of left ski mountain
+        skiier.setCenter(312.5, 150);
     } else if (x > 312.5 && x < 530 && y > 150) {
         // Go down right side of left ski mountain
+        skiier.setCenter(312.5, 150);
     } else if (x > 530 && x < 725 && y > 150) {
         // Go down left side of right ski mountain
+        skiier.setCenter(725, 150);
     } else if (x > 725 && y > 150) {
         // Go down right side of right ski mountain
+        skiier.setCenter(312.5, 150);
     }
 
     // M2: What does this line do? What will it look like?
@@ -231,6 +242,10 @@ void mouse(int button, int state, int x, int y) {
     clickX = x;
     clickY = y;
 
+    if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+        click = true;
+    }
+
     // M1: What does this code do?
     //if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
     //    for (Circle &e : eye) {
@@ -243,7 +258,7 @@ void mouse(int button, int state, int x, int y) {
 void timer(int dummy) {
 
     // T1: In what direction will the sun move?
-    sun.move(-1, 1);
+    skiier.move(-1, 2);
 
     // T2: What does this line do? What will it look like?
     sun.setColor(1.0, sun.getGreen() - 1.0/1000, 0, 1);
