@@ -227,28 +227,6 @@ void kbdS(int key, int x, int y) {
 }
 
 void cursor(int x, int y) {
-    if (x < 312.5 && y > 150) {
-        // Go down left of left ski mountain
-        skiier.setCenter(312.5, 150);
-        leftTrail = true;
-        rightTrail = false;
-    } else if (x > 312.5 && x < 530 && y > 150) {
-        // Go down right side of left ski mountain
-        skiier.setCenter(312.5, 150);
-        leftTrail = false;
-        rightTrail = true;
-    } else if (x > 530 && x < 725 && y > 150) {
-        // Go down left side of right ski mountain
-        skiier.setCenter(725, 150);
-        leftTrail = true;
-        rightTrail = false;
-    } else if (x > 725 && y > 150) {
-        // Go down right side of right ski mountain
-        skiier.setCenter(725, 150);
-        leftTrail = false;
-        rightTrail = true;
-    }
-
     // M2: What does this line do? What will it look like?
     //eye[1].setColor(0, x/double(width), y/double(height), 1);
 
@@ -271,6 +249,28 @@ void mouse(int button, int state, int x, int y) {
 
     if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
         click = true;
+    }
+
+    if (x < 312.5 && y > 150) {
+        // Go down left of left ski mountain
+        skiier.setCenter(312.5, 150);
+        leftTrail = true;
+        rightTrail = false;
+    } else if (x > 312.5 && x < 530 && y > 150) {
+        // Go down right side of left ski mountain
+        skiier.setCenter(312.5, 150);
+        leftTrail = false;
+        rightTrail = true;
+    } else if (x > 530 && x < 725 && y > 150) {
+        // Go down left side of right ski mountain
+        skiier.setCenter(725, 150);
+        leftTrail = true;
+        rightTrail = false;
+    } else if (x > 725 && y > 150) {
+        // Go down right side of right ski mountain
+        skiier.setCenter(725, 150);
+        leftTrail = false;
+        rightTrail = true;
     }
 
     // M1: What does this code do?
