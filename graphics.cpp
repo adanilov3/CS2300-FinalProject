@@ -16,6 +16,10 @@ Rect liftie2;
 Rect skiier;
 bool click, leftTrail, rightTrail = false;
 
+// enum for different screens
+enum screens {start, mountain};
+screens screen;
+
 void init() {
     srand(time(0));
     width = 1000;
@@ -73,68 +77,80 @@ void display() {
     /*
      * Draw here
      */
-    //draw mountains
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2i(0, 625);
-    glColor3f(1.0, 1.0, 1.0);
-    glVertex2i(312.5, 150);
-    glColor3f(1.0, 1.0, 1.0);
-    glVertex2i(625, 625);
-    glColor3f(1.0, 1.0, 1.0);
-    glEnd();
 
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2i(450, 625);
-    glColor3f(1.0, 1.0, 1.0);
-    glVertex2i(725, 150);
-    glColor3f(1.0, 1.0, 1.0);
-    glVertex2i(1000, 625);
-    glColor3f(1.0, 1.0, 1.0);
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0,0,0);
-    glVertex2f(735, 170);
-    glVertex2f(800, 625);
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0,0,0);
-    glVertex2f(735, 170);
-    glVertex2f(670, 625);
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0,0,0);
-    glVertex2f(325, 170);
-    glVertex2f(390, 625);
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0,0,0);
-    glVertex2f(325, 170);
-    glVertex2f(260, 625);
-    glEnd();
-
-    liftie1.draw();
-    liftie2.draw();
-
-    if (click) {
-        skiier.draw();
+    if (screen == start) {
+        string startMessage = "Press s key to play";
+        glColor3f(1, 1, 1);
+        glRasterPos2i(500 - (4 * startMessage.length()), 319.5);
+        for (const char &letter : startMessage) {
+            glutBitmapCharacter(GLUT_BITMAP_8_BY_13, letter);
+        }
     }
 
-    for (Circle &flake : snow) {
-        flake.draw();
-    }
+    if (screen == mountain) {
+        //draw mountains
+        glBegin(GL_TRIANGLE_FAN);
+        glVertex2i(0, 625);
+        glColor3f(1.0, 1.0, 1.0);
+        glVertex2i(312.5, 150);
+        glColor3f(1.0, 1.0, 1.0);
+        glVertex2i(625, 625);
+        glColor3f(1.0, 1.0, 1.0);
+        glEnd();
+
+        glBegin(GL_TRIANGLE_FAN);
+        glVertex2i(450, 625);
+        glColor3f(1.0, 1.0, 1.0);
+        glVertex2i(725, 150);
+        glColor3f(1.0, 1.0, 1.0);
+        glVertex2i(1000, 625);
+        glColor3f(1.0, 1.0, 1.0);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0,0,0);
+        glVertex2f(735, 170);
+        glVertex2f(800, 625);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0,0,0);
+        glVertex2f(735, 170);
+        glVertex2f(670, 625);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0,0,0);
+        glVertex2f(325, 170);
+        glVertex2f(390, 625);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0,0,0);
+        glVertex2f(325, 170);
+        glVertex2f(260, 625);
+        glEnd();
+
+        liftie1.draw();
+        liftie2.draw();
+
+        if (click) {
+            skiier.draw();
+        }
+
+        for (Circle &flake : snow) {
+            flake.draw();
+        }
 
 
 
-    // D3: What does this code do? What will it look like? Where will it be?
-    string message = "You clicked the mouse at coordinate (" + to_string(clickX) + ", " + to_string(clickY) + ")";
-    glColor3f(1, 1, 1);
-    glRasterPos2i(0, 50);
-    for (char letter : message) {
-        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, letter);
+        // D3: What does this code do? What will it look like? Where will it be?
+        string message = "You clicked the mouse at coordinate (" + to_string(clickX) + ", " + to_string(clickY) + ")";
+        glColor3f(1, 1, 1);
+        glRasterPos2i(0, 50);
+        for (char letter : message) {
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, letter);
+        }
     }
 
 
@@ -172,6 +188,9 @@ void kbd(unsigned char key, int x, int y) {
             // enough to overlap with other shapes?
             //bubble.setRadius(bubble.getRadius() + 5);
             break;
+        }
+        case 's': {
+            screen = mountain;
         }
     }
     glutPostRedisplay();
