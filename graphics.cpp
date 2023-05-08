@@ -20,6 +20,7 @@ bool click, leftTrail, rightTrail = false;
 enum screens {start, mountain};
 screens screen;
 
+
 void init() {
     srand(time(0));
     width = 1000;
@@ -79,7 +80,7 @@ void display() {
      */
 
     if (screen == start) {
-        string startMessage = "Press s key to play";
+        string startMessage = "Press s key to simulate ski mountain";
         glColor3f(1, 1, 1);
         glRasterPos2i(500 - (4 * startMessage.length()), 319.5);
         for (const char &letter : startMessage) {
