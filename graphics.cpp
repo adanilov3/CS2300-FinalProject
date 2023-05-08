@@ -14,11 +14,16 @@ vector<Circle> snow;
 Rect liftie1;
 Rect liftie2;
 Rect skiier;
+
+vector<Rect> leftLift;
+vector<Rect> rightLift;
+
 bool click, leftTrail, rightTrail = false;
 
 // enum for different screens
 enum screens {start, mountain};
 screens screen;
+
 
 void init() {
     srand(time(0));
@@ -44,6 +49,8 @@ void init() {
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
     }
+
+
 }
 
 /* Initialize OpenGL Graphics */
@@ -79,7 +86,7 @@ void display() {
      */
 
     if (screen == start) {
-        string startMessage = "Press s key to play";
+        string startMessage = "Press s key to simulate ski mountain";
         glColor3f(1, 1, 1);
         glRasterPos2i(500 - (4 * startMessage.length()), 319.5);
         for (const char &letter : startMessage) {
@@ -153,18 +160,6 @@ void display() {
         }
     }
 
-
-    // D1: What is being drawn? Where? What color?
-    /*glColor3f(0, 0.5, 0);
-    glBegin(GL_TRIANGLES);
-    glVertex2i(0, 0);
-    glVertex2i(0, 100);
-    glVertex2i(100, 0);
-    glVertex2i(width, height);
-    glVertex2i(width, height - 100);
-    glVertex2i(width - 100, height);
-    glEnd();*/
-
     glDisable(GL_BLEND);
 
     glFlush();  // Render now
@@ -177,17 +172,6 @@ void kbd(unsigned char key, int x, int y) {
             // escape
             glutDestroyWindow(wd);
             exit(0);
-        }
-        case 'b': {
-            // K1: What does this line of code do? When?
-            //bubble.setColor(0, 0, 0, 0);
-            break;
-        }
-        case 'o': {
-            // K2: What happens when the bubble gets big
-            // enough to overlap with other shapes?
-            //bubble.setRadius(bubble.getRadius() + 5);
-            break;
         }
         case 's': {
             screen = mountain;
@@ -227,16 +211,6 @@ void kbdS(int key, int x, int y) {
 }
 
 void cursor(int x, int y) {
-    // M2: What does this line do? What will it look like?
-    //eye[1].setColor(0, x/double(width), y/double(height), 1);
-
-    // M3: What do these lines do? What will it look like?
-    //if (x >= 0 && x <= width && y >= 0 && y <= height) {
-    //    eye[1].setCenter(eye[0].getCenterX() + ((x - eye[0].getCenterX()) / (double) width * 20),
-    //                     eye[0].getCenterY() + ((y - eye[0].getCenterY()) / (double) height * 20));
-    //    eye[2].setCenter(eye[1].getCenterX() + ((x - eye[1].getCenterX()) / (double) width * 14),
-    //                     eye[1].getCenterY() + ((y - eye[1].getCenterY()) / (double) height * 14));
-    //}
     glutPostRedisplay();
 }
 
@@ -273,29 +247,17 @@ void mouse(int button, int state, int x, int y) {
         rightTrail = true;
     }
 
-    // M1: What does this code do?
-    //if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-    //    for (Circle &e : eye) {
-    //        e.setCenter(x, y);
-    //    }
-    //}
     glutPostRedisplay();
 }
 
 void timer(int dummy) {
 
-    // T1: In what direction will the sun move?
     if (leftTrail && !rightTrail) {
         skiier.move(-1, 2);
     } else if (!leftTrail && rightTrail) {
         skiier.move(1, 2);
     }
 
-    // T2: What does this line do? What will it look like?
-    sun.setColor(1.0, sun.getGreen() - 1.0/1000, 0, 1);
-
-    // T3: What does this loop do? What will it look like?
-    // Why are these arguments given to the methods?
     for (Circle &flake : snow) {
         flake.moveY(flake.getRadius());
         if (flake.getTopY() > height) {
