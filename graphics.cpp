@@ -14,9 +14,10 @@ vector<Circle> snow;
 Rect liftie1;
 Rect liftie2;
 Rect skiier;
-
-vector<Rect> leftLift;
-vector<Rect> rightLift;
+Rect leftLiftUp;
+Rect leftLiftDown;
+Rect rightLiftUp;
+Rect rightLiftDown;
 
 bool click, leftTrail, rightTrail = false;
 
@@ -45,6 +46,22 @@ void init() {
 
     skiier.setColor(1, 0, 0, 1);
     skiier.setSize(10, 10);
+
+    leftLiftUp.setCenter(800,625);
+    leftLiftUp.setSize(10,10);
+    leftLiftUp.setColor(0.5, 0.5, 0.5, 1);
+
+    leftLiftDown.setCenter(735,170);
+    leftLiftDown.setSize(10,10);
+    leftLiftDown.setColor(0.5, 0.5, 0.5, 1);
+
+    rightLiftUp.setCenter(390,625);
+    rightLiftUp.setSize(10,10);
+    rightLiftUp.setColor(0.5, 0.5, 0.5, 1);
+
+    rightLiftDown.setCenter(325,170);
+    rightLiftDown.setSize(10,10);
+    rightLiftDown.setColor(0.5, 0.5, 0.5, 1);
 
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
@@ -138,8 +155,6 @@ void display() {
         glVertex2f(260, 625);
         glEnd();
 
-        liftie1.draw();
-        liftie2.draw();
 
         if (click) {
             skiier.draw();
@@ -149,7 +164,13 @@ void display() {
             flake.draw();
         }
 
+        leftLiftUp.draw();
+        leftLiftDown.draw();
+        rightLiftUp.draw();
+        rightLiftDown.draw();
 
+        liftie1.draw();
+        liftie2.draw();
 
         // D3: What does this code do? What will it look like? Where will it be?
         string message = "You clicked the mouse at coordinate (" + to_string(clickX) + ", " + to_string(clickY) + ")";
@@ -263,6 +284,18 @@ void timer(int dummy) {
         if (flake.getTopY() > height) {
             flake.setCenter(rand() % int(width), -flake.getRadius());
         }
+    }
+
+    leftLiftUp.move(-0.14, -1);
+    if (leftLiftUp.getCenterY() == 170){
+        leftLiftUp.move(0, 1);
+        leftLiftDown.move(-0.14, 1);
+    }
+
+    rightLiftUp.move(-0.14, -1);
+    if (rightLiftUp.getCenterY() == 170){
+        rightLiftUp.move(0, 1);
+        rightLiftDown.move(-0.14, 1);
     }
 
     glutPostRedisplay();
