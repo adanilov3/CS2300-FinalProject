@@ -154,18 +154,6 @@ void display() {
         }
     }
 
-
-    // D1: What is being drawn? Where? What color?
-    /*glColor3f(0, 0.5, 0);
-    glBegin(GL_TRIANGLES);
-    glVertex2i(0, 0);
-    glVertex2i(0, 100);
-    glVertex2i(100, 0);
-    glVertex2i(width, height);
-    glVertex2i(width, height - 100);
-    glVertex2i(width - 100, height);
-    glEnd();*/
-
     glDisable(GL_BLEND);
 
     glFlush();  // Render now
@@ -274,29 +262,17 @@ void mouse(int button, int state, int x, int y) {
         rightTrail = true;
     }
 
-    // M1: What does this code do?
-    //if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-    //    for (Circle &e : eye) {
-    //        e.setCenter(x, y);
-    //    }
-    //}
     glutPostRedisplay();
 }
 
 void timer(int dummy) {
 
-    // T1: In what direction will the sun move?
     if (leftTrail && !rightTrail) {
         skiier.move(-1, 2);
     } else if (!leftTrail && rightTrail) {
         skiier.move(1, 2);
     }
 
-    // T2: What does this line do? What will it look like?
-    sun.setColor(1.0, sun.getGreen() - 1.0/1000, 0, 1);
-
-    // T3: What does this loop do? What will it look like?
-    // Why are these arguments given to the methods?
     for (Circle &flake : snow) {
         flake.moveY(flake.getRadius());
         if (flake.getTopY() > height) {
