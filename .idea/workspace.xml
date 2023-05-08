@@ -17,14 +17,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="lifts that move barely">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="finished?">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphics.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,8 @@
       <workItem from="1682622474339" duration="304000" />
       <workItem from="1682965371765" duration="166000" />
       <workItem from="1683040740177" duration="398000" />
-      <workItem from="1683556285447" duration="10327000" />
+      <workItem from="1683556285447" duration="10857000" />
+      <workItem from="1683577659167" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1681311971295</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683576514304</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="finished?">
+      <created>1683576956238</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683576956238</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +289,6 @@
     <MESSAGE value="hello" />
     <MESSAGE value="commented out unnecessary stuff" />
     <MESSAGE value="made a tree" />
-    <MESSAGE value="finished?" />
     <MESSAGE value="starting fresh!" />
     <MESSAGE value="dimensions are set up" />
     <MESSAGE value="hi" />
@@ -294,6 +300,7 @@
     <MESSAGE value="cleaning up" />
     <MESSAGE value="starting lifts that move" />
     <MESSAGE value="lifts that move barely" />
-    <option name="LAST_COMMIT_MESSAGE" value="lifts that move barely" />
+    <MESSAGE value="finished?" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished?" />
   </component>
 </project>
