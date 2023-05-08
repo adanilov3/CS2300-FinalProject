@@ -14,6 +14,10 @@ vector<Circle> snow;
 Rect liftie1;
 Rect liftie2;
 Rect skiier;
+
+vector<Rect> leftLift;
+vector<Rect> rightLift;
+
 bool click, leftTrail, rightTrail = false;
 
 // enum for different screens
@@ -45,6 +49,8 @@ void init() {
     for (int i = 0; i < 150; ++i) {
         snow.push_back(Circle(1, 1, 1, 1, rand() % int(width), -(rand() % int(height)), rand() % 5 + 1));
     }
+
+
 }
 
 /* Initialize OpenGL Graphics */
@@ -167,17 +173,6 @@ void kbd(unsigned char key, int x, int y) {
             glutDestroyWindow(wd);
             exit(0);
         }
-        case 'b': {
-            // K1: What does this line of code do? When?
-            //bubble.setColor(0, 0, 0, 0);
-            break;
-        }
-        case 'o': {
-            // K2: What happens when the bubble gets big
-            // enough to overlap with other shapes?
-            //bubble.setRadius(bubble.getRadius() + 5);
-            break;
-        }
         case 's': {
             screen = mountain;
         }
@@ -216,16 +211,6 @@ void kbdS(int key, int x, int y) {
 }
 
 void cursor(int x, int y) {
-    // M2: What does this line do? What will it look like?
-    //eye[1].setColor(0, x/double(width), y/double(height), 1);
-
-    // M3: What do these lines do? What will it look like?
-    //if (x >= 0 && x <= width && y >= 0 && y <= height) {
-    //    eye[1].setCenter(eye[0].getCenterX() + ((x - eye[0].getCenterX()) / (double) width * 20),
-    //                     eye[0].getCenterY() + ((y - eye[0].getCenterY()) / (double) height * 20));
-    //    eye[2].setCenter(eye[1].getCenterX() + ((x - eye[1].getCenterX()) / (double) width * 14),
-    //                     eye[1].getCenterY() + ((y - eye[1].getCenterY()) / (double) height * 14));
-    //}
     glutPostRedisplay();
 }
 
