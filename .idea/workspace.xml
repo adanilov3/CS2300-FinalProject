@@ -17,8 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="starting lifts that move">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1ec6fdd4-33dd-452f-acbe-488269fffde8" name="Changes" comment="lifts that move barely">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/graphics.cpp.obj" afterDir="false" />
@@ -101,7 +101,7 @@
       <workItem from="1682622474339" duration="304000" />
       <workItem from="1682965371765" duration="166000" />
       <workItem from="1683040740177" duration="398000" />
-      <workItem from="1683556285447" duration="9887000" />
+      <workItem from="1683556285447" duration="10327000" />
     </task>
     <task id="LOCAL-00001" summary="starter code">
       <created>1681311971295</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683559571231</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="lifts that move barely">
+      <created>1683576514304</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683576514304</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +293,7 @@
     <MESSAGE value="start message changed" />
     <MESSAGE value="cleaning up" />
     <MESSAGE value="starting lifts that move" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting lifts that move" />
+    <MESSAGE value="lifts that move barely" />
+    <option name="LAST_COMMIT_MESSAGE" value="lifts that move barely" />
   </component>
 </project>

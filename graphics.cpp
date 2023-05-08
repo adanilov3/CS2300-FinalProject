@@ -103,7 +103,7 @@ void display() {
      */
 
     if (screen == start) {
-        string startMessage = "Press s key to simulate ski mountain";
+        string startMessage = "Welcome to the ski mountain! Press s key to simulate";
         glColor3f(1, 1, 1);
         glRasterPos2i(500 - (4 * startMessage.length()), 319.5);
         for (const char &letter : startMessage) {
@@ -173,7 +173,7 @@ void display() {
         liftie2.draw();
 
         // D3: What does this code do? What will it look like? Where will it be?
-        string message = "You clicked the mouse at coordinate (" + to_string(clickX) + ", " + to_string(clickY) + ")";
+        string message = "click the mouse near the trail you'd like to see the skiier go down!";
         glColor3f(1, 1, 1);
         glRasterPos2i(0, 50);
         for (char letter : message) {
@@ -202,13 +202,6 @@ void kbd(unsigned char key, int x, int y) {
 }
 
 void kbdUp(unsigned char key, int x, int y) {
-    // K3: What will happen here? When?
-    switch(key) {
-        case 'b': {
-            //bubble.setColor(0.7, 0.8, 0.8, 1);
-            break;
-        }
-    }
     glutPostRedisplay();
 }
 
