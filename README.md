@@ -24,11 +24,3 @@ when making our classes.
 ### Known Bugs
 A known bug that has occurred is that the lifts that were meant to only go up stray off to the side after going up the
 lift line successfully.
-
-### Expected Grade
-We expect to get around 100 points on this project. The design of the program meets all requirements and includes
-concepts from at least 2 of the 3 modules. The project is
-easily as complex as the previous open-ended projects. The program is very user-friendly and doesn't have any
-complicated instructions, and we put more effort into this project than any of the open-ended ones.
-
-https://uvmoffice-my.sharepoint.com/:v:/g/personal/adanilov_uvm_edu/EWfYVKCMhDxMg1OOlDgggs4B7PYDnXfZhwWnWlGbzTppbg?e=C3R9n1
